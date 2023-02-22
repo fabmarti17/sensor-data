@@ -1,9 +1,6 @@
 import xapi from 'xapi';
 
 //init config
-xapi.Config.HttpClient.AllowHTTP.set('True');
-xapi.Config.HttpClient.AllowInsecureHTTPS.set('True');
-xapi.Config.HttpClient.Mode.set('On');
 xapi.Config.RoomAnalytics.AmbientNoiseEstimation.Mode.set('On');
 xapi.Config.HttpClient.AllowHTTP.set('True'); //allow codec to do http
 xapi.Config.HttpClient.AllowInsecureHTTPS.set('True'); //enable ssl
