@@ -12,4 +12,4 @@ Step 3 : verify the codec can access the url of the digital signage
 
 Step 4 : Enjoy
 
-![This is an image](https://github.com/fabmarti17/sensor-data/blob/main/webex_bg.jpg)
+![This is an image](Screenshot 2023-02-22 at 15.35.37.png)
