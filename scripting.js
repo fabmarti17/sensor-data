@@ -22,6 +22,7 @@ function myFunction() {
     var airquality = getUrlParameter('airquality');
     var pccur = getUrlParameter('pccur');
     var peoplecount = getUrlParameter('peoplecount');
+    var sound = getUrlParameter('sound');
     
     document.getElementById("test-humidity").innerHTML = humidity;
     document.getElementById("test-temp").innerHTML = temp;
