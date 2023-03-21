@@ -27,7 +27,7 @@ async function updateUrl() {
   const sound = await xapi.Status.RoomAnalytics.Sound.Level.A.get()
   const reverberation = await xapi.Status.RoomAnalytics.ReverberationTime.Middle.get()
 
-  const url = baseUrl + '?temp=' + temp + '&humidity=' + hum + '&ambientnoise=' +anoise + '&name=' + name + '&peoplecount=' + pccur + '/' + pccap + '&reverberation=' + reverberation;
+  const url = baseUrl + '?temp=' + temp + '&humidity=' + hum + '&ambientnoise=' +anoise + '&name=' + name + '&peoplecount=' + pccur + '/' + pccap + '&sound=' + sound;
   xapi.Config.Standby.Signage.Url.set(url);
   console.log('signage url updated:', url);
 }
