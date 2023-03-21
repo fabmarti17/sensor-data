@@ -22,6 +22,7 @@ function myFunction() {
     var peoplecount = getUrlParameter('peoplecount');
     var sound = getUrlParameter('sound');
     var airquality = getUrlParameter('airquality');
+    var reverberation = getUrlParameter('reverberation');
     
     document.getElementById("test-humidity").innerHTML = humidity;
     document.getElementById("test-temp").innerHTML = temp;
@@ -30,4 +31,6 @@ function myFunction() {
     document.getElementById("test-airquality").innerHTML = airquality;
     document.getElementById("test-peoplecount").innerHTML = peoplecount;
     document.getElementById("test-sound").innerHTML = sound;
+    document.getElementById("test-reverberation").innerHTML = reverberation;
+    
     }
