@@ -25,7 +25,7 @@ async function updateUrl() {
   const pccur = await xapi.Status.RoomAnalytics.PeopleCount.Current.get()
   const pccap = await xapi.Status.RoomAnalytics.PeopleCount.Capacity.get()
   const sound = await xapi.Status.RoomAnalytics.Sound.Level.A.get()
-  const reverberation = await xapi.Status.RoomAnalytics.ReverberationTime.LastRun.get()
+  const reverberation = await xapi.Status.RoomAnalytics.ReverberationTime.Middle.get()
 
   const url = baseUrl + '?temp=' + temp + '&humidity=' + hum + '&ambientnoise=' +anoise + '&name=' + name + '&airquality=' + airquality + '&peoplecount=' + pccur + '/' + pccap + '&reverberation=' + reverberation;
   xapi.Config.Standby.Signage.Url.set(url);
